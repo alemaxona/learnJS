@@ -1,1 +1,1 @@
-lernJS 
+Learning JavaScript
