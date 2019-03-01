@@ -18,7 +18,15 @@ if (1) {
     // Всегда выполнится! Как в python: if True: ...
 }
 
+// Тернарный оператор
 // '?', но лучше всегда использовать if else!
+// Условие IF в одну строку
+var x = 1 === 1 ? console.log('true') : 'false'
+// true
+// условие ?  : значение при True : другое условие ? Значение при True : ... : Значение при False
+5 > 2 ? console.log('True') : console.log('False')
+// True
+
 // --------------
 var age = prompt('возраст?', 18);
 
@@ -43,9 +51,14 @@ if (age < 3) {
 }
 // --------------
 
-// Условие IF в одну строку
-var x = 1 === 1 ? console.log('true') : 'false'
-// true
+// Что дает 0(False)
+ if (0) {  // 0, null, undefined, '', NaN - всегда будут приходить к - 'is False'
+   console.log('is True')
+ } else {
+   console.log('is False')
+ }
+
+
 
 var company = prompt('Какая компания создала JavaScript?', '');
 company == 'Netscape' ? alert('Да, верно') : alert('Неправильно');
@@ -184,7 +197,7 @@ switch (a) {
   case 5:
     alert('Неверно!');
     alert('Немного ошиблись, бывает.');
-    break;  // До сюда
+    break;  // до сюда
 
   default:
     alert('Странный результат, очень странный');
@@ -379,6 +392,14 @@ myClass.prototype.test = function() {  // Создание прототипа
 }
 o.test()
 // TEST
+
+// random
+Math.random()  // рандомное значение от 0 до 1
+// Мой тест, посмотреть другие.
+var a = 100;
+console.log((Math.random() * 100).toFixed())
+// toFixed() усекает колличество занков после запятой
+// toFixed(1) - 1 знак после запятой (44.1)
 
 
 // DOM - Document Object Model (https://learn.javascript.ru/dom-nodes)
