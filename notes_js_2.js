@@ -388,23 +388,32 @@ console.log(myClass.prototype)
 
 
 myClass.prototype.test = function() {  // Создание прототипа
-  console.log('TEST')
+  console.log("TEST")
 }
-o.test()
+o.test();
 // TEST
 
 // random
 Math.random()  // рандомное значение от 0 до 1
 // Мой тест, посмотреть другие.
 var a = 100;
-console.log((Math.random() * 100).toFixed())
+console.log((Math.random() * 100).toFixed());
 // toFixed() усекает колличество занков после запятой
 // toFixed(1) - 1 знак после запятой (44.1)
 
 
 // DOM - Document Object Model (https://learn.javascript.ru/dom-nodes)
 // document - ~ все элементы страницы
-document.getElementsByTagName('a')  // селект
+document.getElementsByTagName('a');  // селект
 // Выведет все ссылки
 // ==
-document.getElementsByClassName('Link')
+document.getElementsByClassName('Link');
+
+
+// From book
+function ucFirst(str) {
+  
+  return str.charAt(str[0]).toUpperCase() + str.substring(1);
+}
+
+console.log(ucFirst('javascript'));
